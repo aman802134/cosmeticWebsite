@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmeticShop | E-commerce website</title>
+    <!-- #### styleSheet file link #### -->
+    <link rel="stylesheet" href="style.css">
+    <!-- #### /styleSheet file link #### -->
+    <!-- #### javascript file link #### -->
+    <script src="js/main.js" defer></script>
+    <!-- #### /javascript file link #### -->
+    <!-- #### google fonts links #### -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;500;600;700&family=Cormorant+SC:wght@300;500;700&family=Cormorant:wght@300;400;600&family=Playfair+Display+SC&family=Playfair+Display:wght@400;500&family=Poppins:wght@100;300;500&family=Ubuntu:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- #### /google fonts links #### -->
+    <!-- #### icons from fontawesome cdn links #### -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <!-- #### /icons from fontawesome cdn links #### -->
+</head>
+
+<body>
+
+    <!-- **** home section code ****-->
+    <main class="bg-mainColor">
+        <!-- %%%%%%%%% /header/navbar section code %%%%%%%%%% -->
+        <!-- $$$$ hero section code $$$$ -->
+        <section class="mobile:px-16 py-10 tablate:flex justify-between items-center">
+            <!-- %%%% hero section text column code %%%% -->
+            <div class="mobile:flex flex-col tablate:flex-1">
+                <h1 class=" mobile:w-[70%] font-heroMainTextfont text-4xl pb-5 tablate:text-5xl lg:text-6xl">Welcome to Kashish cosmetics and bangle store
+                </h1>
+                <h3 class="font-PlayfairDisplaySC mobile:text-xl tablate:text-2xl lg:text-3xl pb-1">Wholesale shop</h3>
+                <h4 class="font-PlayfairDisplaySC mobile:text-sm tablate:text-xl lg:text-2xl">Deals in : Cosmetic and Parlour Items</h4>
+                <!-- %%%% hero sction button code %%%% -->
+                <div class="my-10">
+                    <button
+                        class="outline-none border-[1px] rounded-3xl px-5 py-2 bg-buttonColorfirst hover:opacity-80">
+                        <a href="#">View Product<span>&#8594</span></a>
+                    </button>
+                </div>
+                <!-- %%%% /hero sction button code %%%% -->
+            </div>
+            <!-- %%%% /hero section text column code %%%% -->
+
+
+            <!-- %%%% hero section image column code %%%% -->
+            <div class=" w-[350px] h-[350px]  bg-gray-500 border-[1px] border-black  sm:w-[270px] sm:h-[270px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px]">
+
+            </div>
+            <!-- %%%% /hero section image column code %%%% -->
+        </section>
+        <!-- $$$$ /hero section code $$$$ -->
+    </main>
+    <!-- **** /home section code ****-->
+
+    <!-- ++++++++++++++++++++ popularity section code+++++++++++++++++++++++++++++++  -->
+
+    <section class=" sm:flex justify-evenly items-center px-5 py-20  bg-pink-100 md:px-7 lg:px-10">
+        <!-- $$$$ peoples detail $$$$ -->
+        <div>
+            <h2 class=" sm:text-xl md:text-2xl lg:text-3xl  font-CormorantInfant">Trusted by over <span class="text-heartColor">350,000 +
+                    clients</span><br> over Gurugram
+            </h2>
+        </div>
+        <!-- $$$$ /peoples detail $$$$ -->
+        <!-- $$$$ peoples rating $$$$ -->
+        <div>
+            <h2 class="sm:text-xl md:2xl: lg:text-4xl text-heartColor">4.6</h2>
+            <i class="fa-solid fa-star text-heartColor"></i>
+            <i class="fa-solid fa-star text-heartColor"></i>
+            <i class="fa-solid fa-star text-heartColor"></i>
+            <i class="fa-solid fa-star text-heartColor"></i>
+            <i class="fa-solid fa-star-half-stroke text-heartColor"></i>
+        </div>
+        <!-- $$$$ /peoples rating $$$$ -->
+        <!-- $$$$ peoples number likes $$$$ -->
+        <div>
+            <h2 class=" sm:text-xl md:2xl: lg:text-4xl text-heartColor">6k+</h2>
+            <span class="text-heartColor text-xl">All over Delhi</span>
+        </div>
+        <!-- $$$$ /peoples number likes $$$$ -->
+    </section>
+    <!-- ^^^^^^^^^^ /popularity section code ^^^^^^^^^^ -->
+
+    <!-- &&&&&&&&&&&&&&&& Product section code &&&&&&&&&&&&&&&&&&&&&&& -->
+    <section class=" sm:px-28 py-36 text-center">
+        <!-- ^^^^^^^^^^ product section title ^^^^^^^^^^ -->
+        <h1 class="font-CormorantInfant text-4xl">Featured products</h1>
+        <!-- ^^^^^^^^^^ /product section title ^^^^^^^^^^ -->
+        <!-- **** product base code **** -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-24 ">
+            <!-- %%%%% product boxes code %%%%% -->
+            <!-- **** product main container **** --> 
+            <div class="shadow-lg rounded-sm cursor-pointer">
+                <!-- **** product image container **** -->
+                <div class="bg-center bg-cover bg-no-repeat relative">
+                    <!-- ##### product whishlist/ heart code  -->
+                    <div class="absolute top-1 right-4">
+                        <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
+                    </div>
+                    <!-- ##### /product whishlist/ heart code  -->
+                    <img src="images/prodcut-1.webp" alt="Eyeliner">
+                </div>
+                <!-- **** /product image container **** -->
+                <!--**** product detail container ****  -->
+                <div class="px-4 py-4">
+                    <!-- &&&&& product text detail &&&&& -->
+                    <div>
+                        <h3 class="font-Poppins">Eyeliner</h3>
+                        <span class="font-Ubuntu">Price : Rs 350</span>
+                    </div>
+                    <!-- &&&&& /product text detail &&&&& -->
+                    <!-- **** product button container **** -->
+                    <div class="py-5">
+                        <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
+                            <a href="#" class="font-Poppins">Buy now</a>
+                        </button>
+                        <button class=" outline-none rounded-3xl bg-buttonColorfirst px-4 py-1">
+                            <a href="#" class="font-Poppins">Add to cart</a>
+                        </button>
+                    </div>
+                    <!-- **** /product button container **** -->
+                </div>
+                <!--**** /product detail container ****  -->
+            </div>
+            <div class="shadow-lg rounded-sm cursor-pointer hover:">
+                <!-- **** product image container **** -->
+                <div class="bg-center bg-cover bg-no-repeat relative">
+                    <!-- ##### product whishlist/ heart code  -->
+                    <div class="absolute top-1 right-4">
+                        <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
+                    </div>
+                    <!-- ##### /product whishlist/ heart code  -->
+                    <img src="images/prodcut-1.webp" alt="Eyeliner">
+                </div>
+                <!-- **** /product image container **** -->
+                <!--**** product detail container ****  -->
+                <div class="px-4 py-4">
+                    <!-- &&&&& product text detail &&&&& -->
+                    <div>
+                        <h3 class="font-Poppins">Eyeliner</h3>
+                        <span class="font-Ubuntu">Price : Rs 350</span>
+                    </div>
+                    <!-- &&&&& /product text detail &&&&& -->
+                    <!-- **** product button container **** -->
+                    <div class="py-5">
+                        <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
+                            <a href="#" class="font-Poppins">Buy now</a>
+                        </button>
+                        <button class=" outline-none rounded-3xl bg-buttonColorfirst px-4 py-1">
+                            <a href="#" class="font-Poppins">Add to cart</a>
+                        </button>
+                    </div>
+                    <!-- **** /product button container **** -->
+                </div>
+                <!--**** /product detail container ****  -->
+            </div>
+            <div class="shadow-lg rounded-sm cursor-pointer hover:">
+                <!-- **** product image container **** -->
+                <div class="bg-center bg-cover bg-no-repeat relative">
+                    <!-- ##### product whishlist/ heart code  -->
+                    <div class="absolute top-1 right-4">
+                        <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
+                    </div>
+                    <!-- ##### /product whishlist/ heart code  -->
+                    <img src="images/prodcut-1.webp" alt="Eyeliner">
+                </div>
+                <!-- **** /product image container **** -->
+                <!--**** product detail container ****  -->
+                <div class="px-4 py-4">
+                    <!-- &&&&& product text detail &&&&& -->
+                    <div>
+                        <h3 class="font-Poppins">Eyeliner</h3>
+                        <span class="font-Ubuntu">Price : Rs 350</span>
+                    </div>
+                    <!-- &&&&& /product text detail &&&&& -->
+                    <!-- **** product button container **** -->
+                    <div class="py-5">
+                        <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
+                            <a href="#" class="font-Poppins">Buy now</a>
+                        </button>
+                        <button class=" outline-none rounded-3xl bg-buttonColorfirst px-4 py-1">
+                            <a href="#" class="font-Poppins">Add to cart</a>
+                        </button>
+                    </div>
+                    <!-- **** /product button container **** -->
+                </div>
+                <!--**** /product detail container ****  -->
+            </div>
+            <div class="shadow-lg rounded-sm cursor-pointer hover:">
+                <!-- **** product image container **** -->
+                <div class="bg-center bg-cover bg-no-repeat relative">
+                    <!-- ##### product whishlist/ heart code  -->
+                    <div class="absolute top-1 right-4">
+                        <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
+                    </div>
+                    <!-- ##### /product whishlist/ heart code  -->
+                    <img src="images/prodcut-1.webp" alt="Eyeliner">
+                </div>
+                <!-- **** /product image container **** -->
+                <!--**** product detail container ****  -->
+                <div class="px-4 py-4">
+                    <!-- &&&&& product text detail &&&&& -->
+                    <div>
+                        <h3 class="font-Poppins">Eyeliner</h3>
+                        <span class="font-Ubuntu">Price : Rs 350</span>
+                    </div>
+                    <!-- &&&&& /product text detail &&&&& -->
+                    <!-- **** product button container **** -->
+                    <div class="py-5">
+                        <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
+                            <a href="#" class="font-Poppins">Buy now</a>
+                        </button>
+                        <button class=" outline-none rounded-3xl bg-buttonColorfirst px-4 py-1">
+                            <a href="#" class="font-Poppins">Add to cart</a>
+                        </button>
+                    </div>
+                    <!-- **** /product button container **** -->
+                </div>
+                <!--**** /product detail container ****  -->
+            </div>
+            <div class="shadow-lg rounded-sm cursor-pointer hover:">
+                <!-- **** product image container **** -->
+                <div class="bg-center bg-cover bg-no-repeat relative">
+                    <!-- ##### product whishlist/ heart code  -->
+                    <div class="absolute top-1 right-4">
+                        <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
+                    </div>
+                    <!-- ##### /product whishlist/ heart code  -->
+                    <img src="images/prodcut-1.webp" alt="Eyeliner">
+                </div>
+                <!-- **** /product image container **** -->
+                <!--**** product detail container ****  -->
+                <div class="px-4 py-4">
+                    <!-- &&&&& product text detail &&&&& -->
+                    <div>
+                        <h3 class="font-Poppins">Eyeliner</h3>
+                        <span class="font-Ubuntu">Price : Rs 350</span>
+                    </div>
+                    <!-- &&&&& /product text detail &&&&& -->
+                    <!-- **** product button container **** -->
+                    <div class="py-5">
+                        <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
+                            <a href="#" class="font-Poppins">Buy now</a>
+                        </button>
+                        <button class=" outline-none rounded-3xl bg-buttonColorfirst px-4 py-1">
+                            <a href="#" class="font-Poppins">Add to cart</a>
+                        </button>
+                    </div>
+                    <!-- **** /product button container **** -->
+                </div>
+                <!--**** /product detail container ****  -->
+            </div>
+            <div class="shadow-lg rounded-sm cursor-pointer hover:">
+                <!-- **** product image container **** -->
+                <div class="bg-center bg-cover bg-no-repeat relative">
+                    <!-- ##### product whishlist/ heart code  -->
+                    <div class="absolute top-1 right-4">
+                        <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
+                    </div>
+                    <!-- ##### /product whishlist/ heart code  -->
+                    <img src="images/prodcut-1.webp" alt="Eyeliner">
+                </div>
+                <!-- **** /product image container **** -->
+                <!--**** product detail container ****  -->
+                <div class="px-4 py-4">
+                    <!-- &&&&& product text detail &&&&& -->
+                    <div>
+                        <h3 class="font-Poppins">Eyeliner</h3>
+                        <span class="font-Ubuntu">Price : Rs 350</span>
+                    </div>
+                    <!-- &&&&& /product text detail &&&&& -->
+                    <!-- **** product button container **** -->
+                    <div class="py-5">
+                        <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
+                            <a href="#" class="font-Poppins">Buy now</a>
+                        </button>
+                        <button class=" outline-none rounded-3xl bg-buttonColorfirst px-4 py-1">
+                            <a href="#" class="font-Poppins">Add to cart</a>
+                        </button>
+                    </div>
+                    <!-- **** /product button container **** -->
+                </div>
+                <!--**** /product detail container ****  -->
+            </div>
+            <!-- **** /product main container **** -->
+            <!-- **** /product boxes code **** -->
+        </div>
+        <!-- **** /product base code **** -->
+    </section>
+
+    <!-- &&&&&&&&&&&&&&&& /Product section code &&&&&&&&&&&&&&&&&&&&&&& -->
+
+    <!-- -----+++++++++++++++++++ product with discount offer ++++++++++++++++++--------->
+    <section class="bg-mainColor flex justify-between items-center sm:px-12 md:px-16 lg:px24  py-28">
+        <!-- discount product text detail code -->
+        <div class="flex-1">
+            <h2 class="font-CormorantInfant sm:text-3xl md:text-4xl lg:text-5xl pb-3 text-pink-500">Colorscence black colour Eyeliner</h2>
+            <p class="font-Ubuntu text-pink-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni est
+                iure itaque</p>
+            <div class="py-3">
+                <span class=" text-3xl font-Poppins text-pink-300">
+                    Get 30% discount
+                </span>
+            </div>
+            <!-- discount offer button code  -->
+            <div class="py-16">
+                <button class="px-20 py-4 border-heartColor border-[1px] outline-none hover:bg-buttonColorSecond">
+                    <a href="#" class="font-Poppins">Add to cart</a>
+                </button>
+            </div>
+            <!-- /discount offer button code  -->
+        </div>
+        <!-- /discount product text detail code -->
+        <!-- discount product image container  -->
+        <div class="bg-center bg-cover bg-no-repeat w-1/2">
+            <img src="images/discount.jpg" alt="Glossier">
+        </div>
+        <!-- /discount product image container  -->
+    </section>
+    <!-- -----+++++++++++++++++++ /product with discount offer ++++++++++++++++++--------->
+
+
+
+
+    <!-- @@@@@@@@@@@@@@@@ service section code @@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <section id="Service" class="px-12 py-24 text-center">
+        <!-- ^^^^^^^ service section title ^^^^^ -->
+        <div>
+            <h2 class="text-4xl font-CormorantInfant pb-28">Benefit of using our service</h2>
+        </div>
+        <!-- ^^^^^^^ /service section title ^^^^^ -->
+        <!-- ******* services container base ************* -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- **** best quality service container **** -->
+            <div class="text-center bg-pink-100 px-12 py-12">
+                <i class="fas fa-certificate pb-5 text-5xl opacity-75"></i>
+                <h3 class="text-3xl font-CormorantInfant">Best Quality service</h3>
+                <p class="text-sm text-gray-500 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Consectetur explicabo molestiae aspernatur ex
+                    accusantium iure mollitia culpa, nulla odit assumenda qui sed? Vel magni eum laborum ullam beatae
+                    placeat
+                    libero!</p>
+            </div>
+            <!-- **** best /quality service container **** -->
+            <!-- **** free shipping service container **** -->
+            <div class="text-center  bg-pink-100 px-12 py-12">
+                <i class="fa-solid fa-truck pb-5 text-5xl opacity-75"></i>
+                <h3 class="text-3xl font-CormorantInfant">Free shipping</h3>
+                <p class="text-sm text-gray-500 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt, molestiae aspernatur eum, voluptate
+                    deleniti distinctio odit sapiente amet mollitia architecto quo consectetur repellat id qui officia
+                    debitis
+                    optio? Sit, beatae.</p>
+            </div>
+            <!-- **** /free shipping service container **** -->
+            <!-- **** warranty service container **** -->
+            <div class="text-center  bg-pink-100 px-12 py-12">
+                <i class="fa-solid fa-clipboard-check pb-5 text-5xl opacity-75"></i>
+                <h3 class="text-3xl font-CormorantInfant">Fully warranty</h3>
+                <p class="text-sm text-gray-500 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem asperiores illum quae. Laborum
+                    aspernatur assumenda corrupti labore! Illo, tempora velit sed quidem aut excepturi exercitationem
+                    minima
+                </p>
+            </div>
+            <!-- **** /warranty service container **** -->
+        </div>
+        <!-- ******* /services container base ************* -->
+    </section>
+    <!-- @@@@@@@ /service section code @@@@@@@ -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- $$$$$$$$$$$$$$$$$$ our premium service section code $$$$$$$$$$$$$$$$$$$$ -->
+    <section class=" sm:px-20 md:px-14 lg:px-40 py-36 text-center">
+        <!-- premium service section title -->
+        <h1 class="font-CormorantInfant text-4xl">Our premium service</h1>
+        <!-- /premium service section title -->
+        <!-- premium service box base code -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 py-28">
+            <!-- #### premium service box #### -->
+            <!-- ******* makeup service box *********** -->
+            <div class="shadow-xl rounded-sm">
+                <!-- image container -->
+                <div class="bg-center bg-cover bg-no-repeat rounded-sm">
+                    <img src="images/makeup.jpg" alt="makeup kit image" class="rounded-sm">
+                </div>
+                <!-- /image container -->
+                <!-- $$$$$ premium service detail container -->
+                <div class=" px-4 py-10">
+                    <h3 class="font-Poppins text-2xl">We provide makeup facility</h3>
+                    <p class="font-Ubuntu text-center pt-3">We also provide makeup facility on <span>sony beauty
+                            salon.</span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <!-- $$$$$ /premium service detail container -->
+                <!-- premium service button code -->
+                <div class="w-full text-center py-5">
+                    <button class="outline-none border-[1px] border-buttonColorSecond px-10 py-2 rounded-3xl">
+                        <a href="#" class="font-Poppins">Explore</a>
+                    </button>
+                </div>
+                <!-- /premium service button code -->
+            </div>
+            <!-- ******* /makeup service box *********** -->
+            <!-- ******* gift service box ************* -->
+            <div class="shadow-xl rounded-sm">
+                <!-- image container -->
+                <div class="rounded-sm bg-center bg-cover bg-no-repeat">
+                    <img src="images/gift.jpg" alt="gift boxes images" class="rounded-sm">
+                </div>
+                <!-- /image container -->
+                <!-- $$$$$ premium service detail container -->
+                <div class="px-4 py-10">
+                    <h3 class="font-Poppins text-2xl">We provide gift facility</h3>
+                    <p class="font-Ubuntu text-center pt-3">We also provide makeup facility on <span
+                            class="text-pink-600 font-CormorantInfant text-xl">sony beauty salon.</span>Lorem ipsum
+                        dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <!-- $$$$$ /premium service detail container -->
+                <!-- premium service button code -->
+                <div class="w-full text-center py-5">
+                    <button class="outline-none border-none bg-buttonColorSecond px-10 py-2 rounded-3xl">
+                        <a href="#" class="font-Poppins">Pack your gift</a>
+                    </button>
+                </div>
+                <!-- /premium service button code -->
+            </div>
+            <!-- ******* /gift service box ************* -->
+            <!-- #### /premium service box #### -->
+        </div>
+        <!-- /premium service box base code -->
+
+    </section>
+    <!-- $$$$$$$$$$$$$$$$$$ /our premium service section code $$$$$$$$$$$$$$$$$$$$ -->
+    <!-- %%%%%%%%%%%%%%%%% testimonial section code %%%%%%%%%%%%%%%% -->
+    <section class="sm:px-20 md:px-8 lg:px-36 py-34 text-center">
+        <!-- $$$$$ testimonial heading $$$$$$$$ -->
+        <h1 class="text-3xl font-CormorantInfant">Testimonial</h1>
+        <!-- $$$$$ /testimonial heading $$$$$$$$ -->
+        <!-- testimonial section base -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2  gap-6">
+            <!-- @@@@@ testimonial boxes @@@@@@@Xx -->
+            <div class="text-center rounded-sm shadow-xl px-10 my-20">
+                <!-- heading -->
+                <h3 class="text-xl font-heroMainTextfont py-14">What our clients says about us</h3>
+                <!-- /heading -->
+                <!-- $$$$ creative box @@@@@@@ -->
+                <div
+                    class="border-2 border-black rounded-tr-xl rounded-bl-xl flex flex-col justify-center items-center px-5 py-3">
+
+                    <!-- profile of client -->
+                    <div class="rounded-full bg-center bg-cover bg-no-repeat  w-32 h-32      border-2 border-black ">
+                        <!-- <img src="images/testimonial1.webp" alt="person image" class=""> -->
+                    </div>
+                    <!-- /profile of client -->
+                    <!-- double quotes symbol -->
+                    <div class="py-3">
+                        <i class="fas fa-quote-left text-heartColor text-3xl"></i>
+                    </div>
+                    <!-- /double quotes symbol -->
+                    <!-- detail of client -->
+                    <div class="py-3">
+                        <h4 class="font-Poppins font-bold">Bimlesh pandey</h4>
+                        <p class="text-gray-700 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                            debitis
+                            dicta excepturi, iusto in iste distinctio aliquid aperiam necessitatibus inventore
+                            aspernatur, quae natus fugiat sit?</p>
+                    </div>
+                    <!-- /detail of client -->
+                    <!-- client rating -->
+                    <div>
+                        <i class="fa-solid fa-star text-heartColor"></i>
+                        <i class="fa-solid fa-star text-heartColor"></i>
+                        <i class="fa-solid fa-star text-heartColor"></i>
+                        <i class="fa-solid fa-star text-heartColor"></i>
+                        <i class="fa-solid fa-star-half-stroke text-heartColor"></i>
+                    </div>
+                    <!-- /client rating -->
+                </div>
+                <!-- $$$$ /creative box @@@@@@@ -->
+                <!-- learn more button of testimonial box -->
+                <div class="py-10">
+                    <button class="px-10 py-2 border-[1px] bg-buttonColorSecond rounded-3xl outline-none">
+                        <a href="#" class="font-Poppins">Learn more</a>
+                    </button>
+                </div>
+                <!-- /learn more button of testimonial box -->
+            </div>
+            <div class="text-center rounded-sm shadow-xl px-10 my-20">
+                <!-- heading -->
+                <h3 class="text-xl font-heroMainTextfont py-14">What our clients says about us</h3>
+                <!-- /heading -->
+                <!-- $$$$ creative box @@@@@@@ -->
+                <div
+                    class="border-2 border-black rounded-tr-xl rounded-bl-xl flex flex-col justify-center items-center px-5 py-3">
+                    <!-- profile of client -->
+                    <div class="rounded-full bg-center bg-cover bg-no-repeat w-32 h-32      border-2 border-black ">
+                        <!-- <img src="images/testimonial1.webp" alt="person image" class=""> -->
+                    </div>
+                    <!-- /profile of client -->
+                    <!-- double quotes symbol -->
+                    <div class="py-3">
+                        <i class="fas fa-quote-left text-heartColor text-3xl"></i>
+                    </div>
+                    <!-- /double quotes symbol -->
+                    <!-- detail of client -->
+                    <div class="py-3">
+                        <h4 class="font-Poppins font-bold">Soni pandey</h4>
+                        <p class="text-gray-700 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                            debitis
+                            dicta excepturi, iusto in iste distinctio aliquid aperiam necessitatibus inventore
+                            aspernatur, quae natus fugiat sit?</p>
+                    </div>
+                    <!-- /detail of client -->
+                    <!-- client rating -->
+                    <div>
+                        <i class="fa-solid fa-star text-heartColor"></i>
+                        <i class="fa-solid fa-star text-heartColor"></i>
+                        <i class="fa-solid fa-star text-heartColor"></i>
+                        <i class="fa-solid fa-star text-heartColor"></i>
+                        <i class="fa-solid fa-star-half-stroke text-heartColor"></i>
+                    </div>
+                    <!-- /client rating -->
+                </div>
+                <!-- $$$$ /creative box @@@@@@@ -->
+                <!-- learn more button of testimonial box -->
+                <div class="py-10">
+                    <button class="px-10 py-2 border-[1px] bg-buttonColorSecond rounded-3xl outline-none">
+                        <a href="#" class="font-Poppins">Learn more</a>
+                    </button>
+                </div>
+                <!-- /learn more button of testimonial box -->
+            </div>
+            <!-- @@@@@ /testimonial boxes @@@@@@@Xx -->
+        </div>
+        <!-- /testimonial section base -->
+    </section>
+    <!-- %%%%%%%%%%%%%%%%% /testimonial section code %%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%% companies logo section code %%%%%%%%%%%%%% -->
+    <section class="px-16 py-40">
+        <!-- ###### company logo base ##### -->
+        <div class="grid grid-cols-4 gap-10">
+            <!-- companies logo -->
+            <div>
+                <img src="images/company1.webp" alt="company logo" class="grayscale hover:grayscale-0">
+            </div>
+            <div>
+                <img src="images/company2.png" alt="company logo" class="grayscale hover:grayscale-0">
+            </div>
+            <div>
+                <img src="images/company3.png" alt="company logo" class="grayscale hover:grayscale-0">
+            </div>
+            <div>
+                <img src="images/company4.webp" alt="company logo" class="grayscale hover:grayscale-0">
+            </div>
+            <!-- companies logo -->
+        </div>
+        <!-- ###### company logo base ##### -->
+    </section>
+    <!-- %%%%%%%%%%%%%%%%% /companies logo section code %%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%% blog section code %%%%%%%%%%%%%%%%%%%%% -->
+    <section class="text-center sm:px-20 md:px-14 lg:px-32 py-32">
+        <!-- blog section heading -->
+        <div>
+            <h1 class="font-CormorantInfant text-4xl">Our latest blog</h1>
+        </div>
+        <!-- /blog section heading -->
+        <!-- blog section box base code -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 my-20">
+
+            <!-- blog box code -->
+            <div class=" px-10 py-5 shadow-2xl rounded-sm flex flex-col justify-center items-center">
+                <!-- profile of blogger -->
+                <div class="w-28 h-28 rounded-full border-black border-2 ">
+
+                </div>
+                <!-- /profile of blogger -->
+                <!-- text detail of blogger -->
+                <div class="py-5">
+                    <h3 class="font-bold font-Poppins">Aman kumar pandey</h3>
+                    <p class="font-Ubuntu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ab
+                        suscipit et quia similique fugiat. Unde, neque. Quibusdam earum, placeat praesentium eos aliquam
+                        inventore animi magni sunt, ea minus sint.</p>
+                </div>
+                <!-- /text detail of blogger -->
+                <!-- button of blog card -->
+                <div class="py-5">
+                    <button class="outline-none border-[1px] border-buttonColorSecond rounded-3xl px-10 py-1">
+                        <a href="#" class="font-Poppins">See more</a>
+                    </button>
+                </div>
+                <!-- /button of blog card -->
+
+            </div>
+            <!-- /blog box code -->
+            <!-- blog box code -->
+            <div class=" px-10 py-5 shadow-2xl rounded-sm flex flex-col justify-center items-center">
+                <!-- profile of blogger -->
+                <div class="w-28 h-28 rounded-full border-black border-2 ">
+
+                </div>
+                <!-- /profile of blogger -->
+                <!-- text detail of blogger -->
+                <div class="py-5">
+                    <h3 class="font-bold font-Poppins">Aman kumar pandey</h3>
+                    <p class="font-Ubuntu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ab
+                        suscipit et quia similique fugiat. Unde, neque. Quibusdam earum, placeat praesentium eos aliquam
+                        inventore animi magni sunt, ea minus sint.</p>
+                </div>
+                <!-- /text detail of blogger -->
+                <!-- button of blog card -->
+                <div class="py-5">
+                    <button class="outline-none border-[1px] border-buttonColorSecond rounded-3xl px-10 py-1">
+                        <a href="#" class="font-Poppins">See more</a>
+                    </button>
+                </div>
+                <!-- /button of blog card -->
+
+            </div>
+            <!-- /blog box code -->
+        </div>
+        <!-- /blog section box base code -->
+    </section>
+    <!-- %%%%%%%%%%%%%%%%% /blog section code %%%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%% footer section code %%%%%%%%%%%%%%%%%%%% -->
+    <footer class="mt-24 bg-pink-200 w-full px-24 py-4 relative">
+        <!-- subscribe button code -->
+        <div class="absolute -top-4 sm:left-[30%] md:left-[35%] lg:left-1/2">
+            <input type="email" placeholder="Enter your email"
+                class=" sm:px-7 py-2 md:px-12 md:py-3 rounded-tl-md rounded-bl-md border-[1px] border-buttonColorSecond font-Poppins outline-none ">
+            <button
+                class="outline-none  border-buttonColorSecond bg-buttonColorSecond rounded-tr-md rounded-br-md sm:px-7 md:px-12 lg:px-16 sm:py-2 md:py-3">
+                <a href="#" class="font-CormorantInfant text-xl">Subscribe</a>
+            </button>
+        </div>
+        <!-- /subscribe button code -->
+        <!-- content base of footer -->
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 py-20">
+            <div>
+                <a href="#" class="text-3xl font-LogoFont italic">Kashish<span
+                        class="text-buttonColorSecond">Cosmetic</span></a>
+                <p class="font-CormorantInfant text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda saepe, quidem odio tenetur fugit totam numquam ad similique quo laboriosam tempore ex
+                    itaque facere sapiente neque ab debitis nemo rem.</p>
+            </div>
+            <!-- useful links of footer -->
+            <div>
+                <ul class="flex flex-col">
+                    <li class="px-5"><a href="#"
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Home</a>
+                    </li>
+                    <li class="px-5"><a href="#"
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">About</a>
+                    </li>
+                    <li class="px-5"><a href="#"
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Shop</a>
+                    </li>
+                    <li class="px-5"><a href="#Service"
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Service</a>
+                    </li>
+                    <li class="px-5"><a href="#"
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">We
+                            also
+                            provide</a>
+                    </li>
+                    <li class="px-5"><a href="#"
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /useful links of footer -->
+            <!-- social media links of footer -->
+            <div>
+                <ul class="flex flex-col">
+                    <li>
+                        <a href=""
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Facebook</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Instagram</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /social media links of footer -->
+            <!-- term and condition footer -->
+            <div>
+                <ul class="flex flex-col">
+                    <li>
+                        <a href=""
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Term
+                            and condition</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Privacy
+                            policy</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Something</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /term and condition footer -->
+        </div>
+        <!-- copy right logo -->
+        <hr class="my-4">
+        <div class="my-20">
+            <h4 class="font-CormorantInfant text-xl">
+                <i class="fa-solid fa-copyright"></i>
+                Copyright 2022 Kashish cosmetic : All right reserved
+            </h4>
+        </div>
+        <!-- /copy right logo -->
+        <!-- /content of footer -->
+    </footer>
+    <!-- %%%%%%%%%%%%%%%%% /footer section code %%%%%%%%%%%%%%%%%%%% -->
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  body {
+    overflow-x: hidden;
+  }
+
+}
+@layer utilities
+{
+    .move>#line1
+    {
+        @apply  -rotate-45 -translate-x-4 translate-y-4 origin-center;
+    }
+    .move>#line2
+    {
+        @apply opacity-0;
+    }
+    .move>#line3
+    {
+        @apply  rotate-45 -translate-x-4 -translate-y-4 origin-center;
+    }
+}
