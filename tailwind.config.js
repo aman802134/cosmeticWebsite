@@ -2,12 +2,6 @@
 module.exports = {
   content: ["*"],
   theme: {
-    screens:{
-      'Ex-mobile': '300px',
-      'mobile':'640px',
-      'tablate':'768px',
-      'desktop': '1024px'
-    },
     extend: {
 
       fontFamily:{
@@ -25,6 +19,10 @@ module.exports = {
         'buttonColorfirst':'#FFAEBC',
         'buttonColorSecond':'#FF75D8',
         'heartColor':'#FF45B5',
+      //  'secondColor':'#FBE7C6',
+      //  'buttonColorThird':'#B68D40',
+      //   'productColor':'#D6AD60',
+      //   'extraColor':'#FBC740'
       }
 
 

@@ -8,6 +8,7 @@
 
 }
 @layer utilities
+
 {
     .move>#line1
     {
@@ -21,4 +22,8 @@
     {
         @apply  rotate-45 -translate-x-4 -translate-y-4 origin-center;
     }
+    /* .active>#navbar
+    {
+      @apply visible pointer-events-none
+    } */
 }

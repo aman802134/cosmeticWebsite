@@ -6,115 +6,181 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CosmeticShop | E-commerce website</title>
-    <!-- #### styleSheet file link #### -->
+    <!-- %%%%%%%%%%%% styleSheet file link %%%%%%%%%%%% -->
     <link rel="stylesheet" href="style.css">
-    <!-- #### /styleSheet file link #### -->
-    <!-- #### javascript file link #### -->
+    <!-- %%%%%%%%%%%% /styleSheet file link %%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%% javascript file link %%%%%%%%%%%% -->
     <script src="js/main.js" defer></script>
-    <!-- #### /javascript file link #### -->
-    <!-- #### google fonts links #### -->
+    <!-- %%%%%%%%%%%% /javascript file link %%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%% google fonts links %%%%%%%%%%%% -->
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;500;600;700&family=Cormorant+SC:wght@300;500;700&family=Cormorant:wght@300;400;600&family=Playfair+Display+SC&family=Playfair+Display:wght@400;500&family=Poppins:wght@100;300;500&family=Ubuntu:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <!-- #### /google fonts links #### -->
-    <!-- #### icons from fontawesome cdn links #### -->
+    <!-- %%%%%%%%%%%% /google fonts links %%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%% icons from fontawesome cdn links %%%%%%%%%%%% -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
-    <!-- #### /icons from fontawesome cdn links #### -->
+    <!-- %%%%%%%%%%%% /icons from fontawesome cdn links %%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%% swiper js cdn links %%%%%%%%%%%%%%% -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- %%%%%%%%%%%%% swiper js cdn links %%%%%%%%%%%%%%% -->
 </head>
 
 <body>
 
-    <!-- **** home section code ****-->
+    <!-- %%%%%% home section code %%%%%%-->
     <main class="bg-mainColor">
+        <!-- %%%%%%%%% header/navbar section code %%%%%%%%%% -->
+        <header class="flex justify-between items-center  py-7 sm:px-4 md:px-7 lg:px-16">
+            <!-- %%%%% menu bar code %%%%%%%% -->
+            <div id="menu-icon"
+                class="bg-buttonColorfirst px-7 py-2 rounded-md flex flex-col  justify-center items-center w-0 sm:visible lg:hidden">
+                <div id="line1" class="w-6 h-1 rounded-sm bg-black my-0.5"></div>
+                <div id="line2" class="w-6 h-1 rounded-sm bg-black my-0.5"></div>
+                <div id="line3" class="w-6 h-1 rounded-sm bg-black my-0.5"></div>
+            </div>
+            <!-- %%%%% /menu bar code %%%%%%%% -->
+            <!-- %%%% logo code %%%%% -->
+            <a href="#" class="font-LogoFont italic sm:text-3xl cursor-pointer">Kashish<span class="text-heartColor">Cosmetic</span> </a>
+            <!-- %%%% /logo code %%%%% -->
+            <!-- %%%%% navigation links code %%%%% -->
+            <nav id="navbar" class="px-2 sm:absolute lg:static top-20 left-0 w-full text-center sm:bg-buttonColorfirst lg:bg-transparent py-4 sm:hidden lg:block">
+                <ul class="flex justify-center text-center sm:block lg:flex">
+                    <li class="sm:py-2 md:px-3 lg:px-5 "><a href="#" class="text-lg font-CormorantInfant font-medium transition-all hover:text-buttonColorSecond">Home</a></li>
+                    <li class="sm:py-2 md:px-3 lg:px-5 "><a href="#" class="text-lg font-CormorantInfant font-medium transition-all hover:text-buttonColorSecond">About</a></li>
+                    <li class="sm:py-2 md:px-3 lg:px-5 "><a href="#" class="text-lg font-CormorantInfant font-medium transition-all hover:text-buttonColorSecond">Shop</a></li>
+                    <li class="sm:py-2 md:px-3 lg:px-5 "><a href="#" class="text-lg font-CormorantInfant font-medium transition-all hover:text-buttonColorSecond">Service</a></li>
+                    <li class="sm:py-2 md:px-3 lg:px-5 "><a href="#" class="text-lg font-CormorantInfant font-medium transition-all hover:text-buttonColorSecond">Blog</a></li>
+                    <li class="sm:py-2 md:px-3 lg:px-5 "><a href="#" class="text-lg font-CormorantInfant font-medium transition-all hover:text-buttonColorSecond">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- %%%%% /navigation links code %%%%% -->
+            <!-- %%%%% authentication buttton/sign or register %%%%%%%% -->
+            <div class="flex justify-center items-center">
+                <button class="outline-none px-4 mx-1 py-1 border-2 border-buttonColorfirst rounded-3xl "><a href="#" class="font-Poppins text-xl">SignIn</a></button>
+                <button class="outline-none px-4 py-1 rounded-3xl bg-buttonColorfirst "><a href="#" class="font-Poppins text-xl">Register</a></button>
+            </div>
+            <!-- %%%%% /authentication buttton/sign or register %%%%%%%% -->
+        </header>
+
         <!-- %%%%%%%%% /header/navbar section code %%%%%%%%%% -->
-        <!-- $$$$ hero section code $$$$ -->
-        <section class="mobile:px-16 py-10 tablate:flex justify-between items-center">
+        <!-- %%%%%%%%% hero section code %%%%%%%%% -->
+        <section class="sm:px-16 py-10 md:flex justify-between items-center md:py-16">
             <!-- %%%% hero section text column code %%%% -->
-            <div class="mobile:flex flex-col tablate:flex-1">
-                <h1 class=" mobile:w-[70%] font-heroMainTextfont text-4xl pb-5 tablate:text-5xl lg:text-6xl">Welcome to Kashish cosmetics and bangle store
+            <div class="sm:flex flex-col md:flex-1">
+                <h1 class=" sm:w-[70%] font-heroMainTextfont text-3xl pb-5 md:text-4xl lg:text-5xl">Welcome to Kashish
+                    cosmetics and bangle store
                 </h1>
-                <h3 class="font-PlayfairDisplaySC mobile:text-xl tablate:text-2xl lg:text-3xl pb-1">Wholesale shop</h3>
-                <h4 class="font-PlayfairDisplaySC mobile:text-sm tablate:text-xl lg:text-2xl">Deals in : Cosmetic and Parlour Items</h4>
-                <!-- %%%% hero sction button code %%%% -->
+                <h3 class="font-PlayfairDisplaySC sm:text-xl md:text-2xl lg:text-3xl pb-1">Wholesale shop</h3>
+                <h4 class="font-PlayfairDisplaySC sm:text-lg md:text-xl lg:text-xl">Deals in : Cosmetic and Parlour
+
+                    Items</h4>
+                <!-- %%%%%%%%%%% hero sction button code %%%%%%%%%%% -->
                 <div class="my-10">
-                    <button
-                        class="outline-none border-[1px] rounded-3xl px-5 py-2 bg-buttonColorfirst hover:opacity-80">
+                    <button class="outline-none border-[1px] rounded-3xl px-5 py-2 
+                        bg-buttonColorfirst hover:opacity-80">
                         <a href="#">View Product<span>&#8594</span></a>
                     </button>
                 </div>
-                <!-- %%%% /hero sction button code %%%% -->
+                <!-- %%%% /hero section button code %%%% -->
             </div>
             <!-- %%%% /hero section text column code %%%% -->
 
 
             <!-- %%%% hero section image column code %%%% -->
-            <div class=" w-[350px] h-[350px]  bg-gray-500 border-[1px] border-black  sm:w-[270px] sm:h-[270px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px]">
+            <div
+                class=" w-[350px] h-[350px]  bg-gray-500 border-[1px] border-black  sm:w-[270px] sm:h-[270px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px]">
 
             </div>
             <!-- %%%% /hero section image column code %%%% -->
         </section>
-        <!-- $$$$ /hero section code $$$$ -->
+        <!-- %%%%%% /hero section code %%%%%% -->
     </main>
-    <!-- **** /home section code ****-->
+    <!-- %%%%%%% /home section code %%%%%%%-->
 
     <!-- ++++++++++++++++++++ popularity section code+++++++++++++++++++++++++++++++  -->
 
     <section class=" sm:flex justify-evenly items-center px-5 py-20  bg-pink-100 md:px-7 lg:px-10">
-        <!-- $$$$ peoples detail $$$$ -->
+        <!-- %%%%%%%%%%%%% peoples detail %%%%%%%%%%%%% -->
         <div>
-            <h2 class=" sm:text-xl md:text-2xl lg:text-3xl  font-CormorantInfant">Trusted by over <span class="text-heartColor">350,000 +
+            <h2 class=" sm:text-xl md:text-2xl lg:text-3xl  font-CormorantInfant">Trusted by over <span
+                    class="text-heartColor">350,000 +
                     clients</span><br> over Gurugram
             </h2>
         </div>
-        <!-- $$$$ /peoples detail $$$$ -->
-        <!-- $$$$ peoples rating $$$$ -->
+        <!-- %%%%%%%%%%%%% /peoples detail %%%%%%%%%%%%% -->
+        <!-- %%%%%%%%%%%%% peoples rating %%%%%%%%%%%%% -->
         <div>
-            <h2 class="sm:text-xl md:2xl: lg:text-4xl text-heartColor">4.6</h2>
+            <h2 class="sm:text-xl md:2xl: lg:text-3xl text-heartColor">4.6</h2>
             <i class="fa-solid fa-star text-heartColor"></i>
             <i class="fa-solid fa-star text-heartColor"></i>
             <i class="fa-solid fa-star text-heartColor"></i>
             <i class="fa-solid fa-star text-heartColor"></i>
             <i class="fa-solid fa-star-half-stroke text-heartColor"></i>
         </div>
-        <!-- $$$$ /peoples rating $$$$ -->
-        <!-- $$$$ peoples number likes $$$$ -->
+        <!-- %%%%%%%%%%%%% /peoples rating %%%%%%%%%%%%% -->
+        <!-- %%%%%%%%%%%%% peoples number likes %%%%%%%%%%%%% -->
         <div>
-            <h2 class=" sm:text-xl md:2xl: lg:text-4xl text-heartColor">6k+</h2>
+            <h2 class=" sm:text-xl md:2xl: lg:text-3xl text-heartColor">6k+</h2>
             <span class="text-heartColor text-xl">All over Delhi</span>
         </div>
-        <!-- $$$$ /peoples number likes $$$$ -->
+        <!-- %%%%%%%%%%%%% /peoples number likes %%%%%%%%%%%%% -->
     </section>
-    <!-- ^^^^^^^^^^ /popularity section code ^^^^^^^^^^ -->
+    <!-- %%%%%%%%%%%%%%%% /popularity section code %%%%%%%%%%%%%%%% -->
 
-    <!-- &&&&&&&&&&&&&&&& Product section code &&&&&&&&&&&&&&&&&&&&&&& -->
+    <!-- %%%%%%%%%%%% Product section code %%%%%%%%%%%% -->
+    <!-- Slider main container -->
+    <!-- <div class="swiper"> -->
+    <!-- Additional required wrapper -->
+    <!-- <div class="swiper-wrapper"> -->
+    <!-- Slides -->
+    <!-- <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div> -->
+    <!-- If we need pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+    <!-- </div> -->
+
+
+
+
+
+
+
+
     <section class=" sm:px-28 py-36 text-center">
-        <!-- ^^^^^^^^^^ product section title ^^^^^^^^^^ -->
+        <!-- %%%%%%%%%%%%%% product section title %%%%%%%%%%%%%% -->
         <h1 class="font-CormorantInfant text-4xl">Featured products</h1>
-        <!-- ^^^^^^^^^^ /product section title ^^^^^^^^^^ -->
-        <!-- **** product base code **** -->
+        <!-- %%%%%%%%%%%%%% /product section title %%%%%%%%%%%%%% -->
+        <!--%%%%%%%%%% product base code%%%%%%%%%% -->
         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-24 ">
             <!-- %%%%% product boxes code %%%%% -->
-            <!-- **** product main container **** --> 
+            <!-- %%%%%%%%%% product main container %%%%%%%%%% -->
             <div class="shadow-lg rounded-sm cursor-pointer">
-                <!-- **** product image container **** -->
+                <!-- %%%%%%%%%% product image container %%%%%%%%%% -->
                 <div class="bg-center bg-cover bg-no-repeat relative">
-                    <!-- ##### product whishlist/ heart code  -->
+                    <!-- %%%%%%%% product whishlist/ heart code  -->
                     <div class="absolute top-1 right-4">
                         <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
                     </div>
-                    <!-- ##### /product whishlist/ heart code  -->
+                    <!-- %%%%%%%% /product whishlist/ heart code  -->
                     <img src="images/prodcut-1.webp" alt="Eyeliner">
                 </div>
-                <!-- **** /product image container **** -->
-                <!--**** product detail container ****  -->
+                <!-- %%%%%%%%%% /product image container %%%%%%%%%% -->
+                <!--%%%%%%%%%% product detail container %%%%%%%%%%  -->
                 <div class="px-4 py-4">
-                    <!-- &&&&& product text detail &&&&& -->
+                    <!-- %%%%%%%%%%%%%% product text detail %%%%%%%%%%%%%% -->
                     <div>
                         <h3 class="font-Poppins">Eyeliner</h3>
                         <span class="font-Ubuntu">Price : Rs 350</span>
                     </div>
-                    <!-- &&&&& /product text detail &&&&& -->
-                    <!-- **** product button container **** -->
+                    <!-- %%%%%%%%%%%%%% /product text detail %%%%%%%%%%%%%% -->
+                    <!-- %%%%%%%%product button container %%%%%%%%-->
                     <div class="py-5">
                         <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
                             <a href="#" class="font-Poppins">Buy now</a>
@@ -123,30 +189,30 @@
                             <a href="#" class="font-Poppins">Add to cart</a>
                         </button>
                     </div>
-                    <!-- **** /product button container **** -->
+                    <!-- %%%%%%%%% /product button container %%%%%%%%% -->
                 </div>
-                <!--**** /product detail container ****  -->
+                <!--%%%%%%%%% /product detail container %%%%%%%%%  -->
             </div>
             <div class="shadow-lg rounded-sm cursor-pointer hover:">
-                <!-- **** product image container **** -->
+                <!-- %%%%%%%%% product image container %%%%%%%%% -->
                 <div class="bg-center bg-cover bg-no-repeat relative">
-                    <!-- ##### product whishlist/ heart code  -->
+                    <!-- %%%%%%%% product whishlist/ heart code  -->
                     <div class="absolute top-1 right-4">
                         <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
                     </div>
-                    <!-- ##### /product whishlist/ heart code  -->
+                    <!-- %%%%%%%% /product whishlist/ heart code  -->
                     <img src="images/prodcut-1.webp" alt="Eyeliner">
                 </div>
-                <!-- **** /product image container **** -->
-                <!--**** product detail container ****  -->
+                <!-- %%%%%%%%% /product image container %%%%%%%%% -->
+                <!--%%%%%%%%% product detail container %%%%%%%%%  -->
                 <div class="px-4 py-4">
-                    <!-- &&&&& product text detail &&&&& -->
+                    <!-- %%%%%%%%%%%%%% product text detail %%%%%%%%%%%%%% -->
                     <div>
                         <h3 class="font-Poppins">Eyeliner</h3>
                         <span class="font-Ubuntu">Price : Rs 350</span>
                     </div>
-                    <!-- &&&&& /product text detail &&&&& -->
-                    <!-- **** product button container **** -->
+                    <!-- %%%%%%%%%%%%%% /product text detail %%%%%%%%%%%%%% -->
+                    <!-- %%%%%%%%% product button container %%%%%%%%% -->
                     <div class="py-5">
                         <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
                             <a href="#" class="font-Poppins">Buy now</a>
@@ -155,30 +221,30 @@
                             <a href="#" class="font-Poppins">Add to cart</a>
                         </button>
                     </div>
-                    <!-- **** /product button container **** -->
+                    <!-- %%%%%%%%% /product button container %%%%%%%%% -->
                 </div>
-                <!--**** /product detail container ****  -->
+                <!--%%%%%%%%% /product detail container %%%%%%%%%  -->
             </div>
             <div class="shadow-lg rounded-sm cursor-pointer hover:">
-                <!-- **** product image container **** -->
+                <!-- %%%%%%%%% product image container %%%%%%%%% -->
                 <div class="bg-center bg-cover bg-no-repeat relative">
-                    <!-- ##### product whishlist/ heart code  -->
+                    <!-- %%%%%%%% product whishlist/ heart code  -->
                     <div class="absolute top-1 right-4">
                         <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
                     </div>
-                    <!-- ##### /product whishlist/ heart code  -->
+                    <!-- %%%%%%%% /product whishlist/ heart code  -->
                     <img src="images/prodcut-1.webp" alt="Eyeliner">
                 </div>
-                <!-- **** /product image container **** -->
-                <!--**** product detail container ****  -->
+                <!-- %%%%%%%%% /product image container %%%%%%%%% -->
+                <!--%%%%%%%%% product detail container %%%%%%%%%  -->
                 <div class="px-4 py-4">
-                    <!-- &&&&& product text detail &&&&& -->
+                    <!-- %%%%%%%%%%%%%% product text detail %%%%%%%%%%%%%% -->
                     <div>
                         <h3 class="font-Poppins">Eyeliner</h3>
                         <span class="font-Ubuntu">Price : Rs 350</span>
                     </div>
-                    <!-- &&&&& /product text detail &&&&& -->
-                    <!-- **** product button container **** -->
+                    <!-- %%%%%%%%%%%%%% /product text detail %%%%%%%%%%%%%% -->
+                    <!-- %%%%%%%%% product button container %%%%%%%%% -->
                     <div class="py-5">
                         <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
                             <a href="#" class="font-Poppins">Buy now</a>
@@ -187,30 +253,30 @@
                             <a href="#" class="font-Poppins">Add to cart</a>
                         </button>
                     </div>
-                    <!-- **** /product button container **** -->
+                    <!-- %%%%%%%%% /product button container %%%%%%%%% -->
                 </div>
-                <!--**** /product detail container ****  -->
+                <!--%%%%%%%%% /product detail container %%%%%%%%%  -->
             </div>
             <div class="shadow-lg rounded-sm cursor-pointer hover:">
-                <!-- **** product image container **** -->
+                <!-- %%%%%%%%% product image container %%%%%%%%% -->
                 <div class="bg-center bg-cover bg-no-repeat relative">
-                    <!-- ##### product whishlist/ heart code  -->
+                    <!-- %%%%%%%% product whishlist/ heart code  -->
                     <div class="absolute top-1 right-4">
                         <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
                     </div>
-                    <!-- ##### /product whishlist/ heart code  -->
+                    <!-- %%%%%%%% /product whishlist/ heart code  -->
                     <img src="images/prodcut-1.webp" alt="Eyeliner">
                 </div>
-                <!-- **** /product image container **** -->
-                <!--**** product detail container ****  -->
+                <!-- %%%%%%%%% /product image container %%%%%%%%% -->
+                <!--%%%%%%%%% product detail container %%%%%%%%%  -->
                 <div class="px-4 py-4">
-                    <!-- &&&&& product text detail &&&&& -->
+                    <!-- %%%%%%%%%%%%%% product text detail %%%%%%%%%%%%%% -->
                     <div>
                         <h3 class="font-Poppins">Eyeliner</h3>
                         <span class="font-Ubuntu">Price : Rs 350</span>
                     </div>
-                    <!-- &&&&& /product text detail &&&&& -->
-                    <!-- **** product button container **** -->
+                    <!-- %%%%%%%%%%%%%% /product text detail %%%%%%%%%%%%%% -->
+                    <!-- %%%%%%%%% product button container %%%%%%%%% -->
                     <div class="py-5">
                         <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
                             <a href="#" class="font-Poppins">Buy now</a>
@@ -219,30 +285,30 @@
                             <a href="#" class="font-Poppins">Add to cart</a>
                         </button>
                     </div>
-                    <!-- **** /product button container **** -->
+                    <!-- %%%%%%%%% /product button container %%%%%%%%% -->
                 </div>
-                <!--**** /product detail container ****  -->
+                <!--%%%%%%%%% /product detail container %%%%%%%%%  -->
             </div>
             <div class="shadow-lg rounded-sm cursor-pointer hover:">
-                <!-- **** product image container **** -->
+                <!-- %%%%%%%%% product image container %%%%%%%%% -->
                 <div class="bg-center bg-cover bg-no-repeat relative">
-                    <!-- ##### product whishlist/ heart code  -->
+                    <!-- %%%%%%%% product whishlist/ heart code  -->
                     <div class="absolute top-1 right-4">
                         <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
                     </div>
-                    <!-- ##### /product whishlist/ heart code  -->
+                    <!-- %%%%%%%% /product whishlist/ heart code  -->
                     <img src="images/prodcut-1.webp" alt="Eyeliner">
                 </div>
-                <!-- **** /product image container **** -->
-                <!--**** product detail container ****  -->
+                <!-- %%%%%%%%% /product image container %%%%%%%%% -->
+                <!--%%%%%%%%% product detail container %%%%%%%%%  -->
                 <div class="px-4 py-4">
-                    <!-- &&&&& product text detail &&&&& -->
+                    <!-- %%%%%%%%%%%%%% product text detail %%%%%%%%%%%%%% -->
                     <div>
                         <h3 class="font-Poppins">Eyeliner</h3>
                         <span class="font-Ubuntu">Price : Rs 350</span>
                     </div>
-                    <!-- &&&&& /product text detail &&&&& -->
-                    <!-- **** product button container **** -->
+                    <!-- %%%%%%%%%%%%%% /product text detail %%%%%%%%%%%%%% -->
+                    <!-- %%%%%%%%% product button container %%%%%%%%% -->
                     <div class="py-5">
                         <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
                             <a href="#" class="font-Poppins">Buy now</a>
@@ -251,30 +317,30 @@
                             <a href="#" class="font-Poppins">Add to cart</a>
                         </button>
                     </div>
-                    <!-- **** /product button container **** -->
+                    <!-- %%%%%%%%% /product button container %%%%%%%%% -->
                 </div>
-                <!--**** /product detail container ****  -->
+                <!--%%%%%%%%% /product detail container %%%%%%%%%  -->
             </div>
             <div class="shadow-lg rounded-sm cursor-pointer hover:">
-                <!-- **** product image container **** -->
+                <!-- %%%%%%%%% product image container %%%%%%%%% -->
                 <div class="bg-center bg-cover bg-no-repeat relative">
-                    <!-- ##### product whishlist/ heart code  -->
+                    <!-- %%%%%%%% product whishlist/ heart code  -->
                     <div class="absolute top-1 right-4">
                         <i class="fa-regular fa-heart text-heartColor text-2xl cursor-pointer"></i>
                     </div>
-                    <!-- ##### /product whishlist/ heart code  -->
+                    <!-- %%%%%%%% /product whishlist/ heart code  -->
                     <img src="images/prodcut-1.webp" alt="Eyeliner">
                 </div>
-                <!-- **** /product image container **** -->
-                <!--**** product detail container ****  -->
+                <!-- %%%%%%%%% /product image container %%%%%%%%% -->
+                <!--%%%%%%%%% product detail container %%%%%%%%%  -->
                 <div class="px-4 py-4">
-                    <!-- &&&&& product text detail &&&&& -->
+                    <!-- %%%%%%%%%%%%%% product text detail %%%%%%%%%%%%%% -->
                     <div>
                         <h3 class="font-Poppins">Eyeliner</h3>
                         <span class="font-Ubuntu">Price : Rs 350</span>
                     </div>
-                    <!-- &&&&& /product text detail &&&&& -->
-                    <!-- **** product button container **** -->
+                    <!-- %%%%%%%%%%%%%% /product text detail %%%%%%%%%%%%%% -->
+                    <!-- %%%%%%%%% product button container %%%%%%%%% -->
                     <div class="py-5">
                         <button class=" outline-none rounded-3xl border-[1px] border-buttonColorfirst px-4 py-1 ">
                             <a href="#" class="font-Poppins">Buy now</a>
@@ -283,23 +349,24 @@
                             <a href="#" class="font-Poppins">Add to cart</a>
                         </button>
                     </div>
-                    <!-- **** /product button container **** -->
+                    <!-- %%%%%%%%% /product button container %%%%%%%%% -->
                 </div>
-                <!--**** /product detail container ****  -->
+                <!--%%%%%%%%% /product detail container %%%%%%%%%  -->
             </div>
-            <!-- **** /product main container **** -->
-            <!-- **** /product boxes code **** -->
+            <!-- %%%%%%%%% /product main container %%%%%%%%% -->
+            <!-- %%%%%%%%% /product boxes code %%%%%%%%% -->
         </div>
-        <!-- **** /product base code **** -->
+        <!-- %%%%%%%%% /product base code %%%%%%%%% -->
     </section>
 
-    <!-- &&&&&&&&&&&&&&&& /Product section code &&&&&&&&&&&&&&&&&&&&&&& -->
+    <!-- %%%%%%%%%%%%%%& /Product section code %%%%%%%%%%%%%%&&& -->
 
     <!-- -----+++++++++++++++++++ product with discount offer ++++++++++++++++++--------->
     <section class="bg-mainColor flex justify-between items-center sm:px-12 md:px-16 lg:px24  py-28">
-        <!-- discount product text detail code -->
+        <!-- %%%%%%%%%% discount product text detail code %%%%%%%%%%  -->
         <div class="flex-1">
-            <h2 class="font-CormorantInfant sm:text-3xl md:text-4xl lg:text-5xl pb-3 text-pink-500">Colorscence black colour Eyeliner</h2>
+            <h2 class="font-CormorantInfant sm:text-3xl md:text-4xl lg:text-5xl pb-3 text-pink-500">Colorscence black
+                colour Eyeliner</h2>
             <p class="font-Ubuntu text-pink-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni est
                 iure itaque</p>
             <div class="py-3">
@@ -307,36 +374,36 @@
                     Get 30% discount
                 </span>
             </div>
-            <!-- discount offer button code  -->
+            <!-- %%%%%%%%%% discount offer button code %%%%%%%%%%   -->
             <div class="py-16">
                 <button class="px-20 py-4 border-heartColor border-[1px] outline-none hover:bg-buttonColorSecond">
                     <a href="#" class="font-Poppins">Add to cart</a>
                 </button>
             </div>
-            <!-- /discount offer button code  -->
+            <!--%%%%%%%%% /discount offer button code %%%%%%%%%  -->
         </div>
-        <!-- /discount product text detail code -->
-        <!-- discount product image container  -->
+        <!--%%%%%%%%%% /discount product text detail code %%%%%%%%%-->
+        <!--%%%%%%%% discount product image container %%%%%%%%%%%%  -->
         <div class="bg-center bg-cover bg-no-repeat w-1/2">
             <img src="images/discount.jpg" alt="Glossier">
         </div>
-        <!-- /discount product image container  -->
+        <!--%%%%%%%%%% /discount product image container  %%%%%%%%%%-->
     </section>
     <!-- -----+++++++++++++++++++ /product with discount offer ++++++++++++++++++--------->
 
 
 
 
-    <!-- @@@@@@@@@@@@@@@@ service section code @@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- %%%%%%%%%%%%%%%%%%% service section code %%%%%%%%%%%%%%%%%%% -->
     <section id="Service" class="px-12 py-24 text-center">
-        <!-- ^^^^^^^ service section title ^^^^^ -->
+        <!-- %%%%%%%%%%%% service section title %%%%%%%%%%%%-->
         <div>
             <h2 class="text-4xl font-CormorantInfant pb-28">Benefit of using our service</h2>
         </div>
-        <!-- ^^^^^^^ /service section title ^^^^^ -->
-        <!-- ******* services container base ************* -->
+        <!-- %%%%%%%%%%%% /service section title %%%%%%%%%%%%-->
+        <!-- %%%%%%%%%*** services container base %%%%%%%%%* -->
         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- **** best quality service container **** -->
+            <!-- %%%%%%%%% best quality service container %%%%%%%%% -->
             <div class="text-center bg-pink-100 px-12 py-12">
                 <i class="fas fa-certificate pb-5 text-5xl opacity-75"></i>
                 <h3 class="text-3xl font-CormorantInfant">Best Quality service</h3>
@@ -346,8 +413,8 @@
                     placeat
                     libero!</p>
             </div>
-            <!-- **** best /quality service container **** -->
-            <!-- **** free shipping service container **** -->
+            <!-- %%%%%%%%% best /quality service container %%%%%%%%% -->
+            <!-- %%%%%%%%% free shipping service container %%%%%%%%% -->
             <div class="text-center  bg-pink-100 px-12 py-12">
                 <i class="fa-solid fa-truck pb-5 text-5xl opacity-75"></i>
                 <h3 class="text-3xl font-CormorantInfant">Free shipping</h3>
@@ -357,8 +424,8 @@
                     debitis
                     optio? Sit, beatae.</p>
             </div>
-            <!-- **** /free shipping service container **** -->
-            <!-- **** warranty service container **** -->
+            <!-- %%%%%%%%% /free shipping service container %%%%%%%%% -->
+            <!-- %%%%%%%%% warranty service container %%%%%%%%% -->
             <div class="text-center  bg-pink-100 px-12 py-12">
                 <i class="fa-solid fa-clipboard-check pb-5 text-5xl opacity-75"></i>
                 <h3 class="text-3xl font-CormorantInfant">Fully warranty</h3>
@@ -368,9 +435,9 @@
                     minima
                 </p>
             </div>
-            <!-- **** /warranty service container **** -->
+            <!-- %%%%%%%%% /warranty service container %%%%%%%%% -->
         </div>
-        <!-- ******* /services container base ************* -->
+        <!-- %%%%%%%%%*** /services container base %%%%%%%%%* -->
     </section>
     <!-- @@@@@@@ /service section code @@@@@@@ -->
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -382,7 +449,7 @@
         <!-- premium service box base code -->
         <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 py-28">
             <!-- #### premium service box #### -->
-            <!-- ******* makeup service box *********** -->
+            <!-- %%%%%%%%%*** makeup service box %%%%%%%%%*** -->
             <div class="shadow-xl rounded-sm">
                 <!-- image container -->
                 <div class="bg-center bg-cover bg-no-repeat rounded-sm">
@@ -404,8 +471,8 @@
                 </div>
                 <!-- /premium service button code -->
             </div>
-            <!-- ******* /makeup service box *********** -->
-            <!-- ******* gift service box ************* -->
+            <!-- %%%%%%%%%*** /makeup service box %%%%%%%%%*** -->
+            <!-- %%%%%%%%%*** gift service box %%%%%%%%%* -->
             <div class="shadow-xl rounded-sm">
                 <!-- image container -->
                 <div class="rounded-sm bg-center bg-cover bg-no-repeat">
@@ -428,7 +495,7 @@
                 </div>
                 <!-- /premium service button code -->
             </div>
-            <!-- ******* /gift service box ************* -->
+            <!-- %%%%%%%%%*** /gift service box %%%%%%%%%* -->
             <!-- #### /premium service box #### -->
         </div>
         <!-- /premium service box base code -->
@@ -541,7 +608,7 @@
     <!-- %%%%%%%%%%%%%%%%% /testimonial section code %%%%%%%%%%%%%%%% -->
     <!-- %%%%%%%%%%%%%%%%% companies logo section code %%%%%%%%%%%%%% -->
     <section class="px-16 py-40">
-        <!-- ###### company logo base ##### -->
+        <!-- %%%%%%%%# company logo base %%%%%%%% -->
         <div class="grid grid-cols-4 gap-10">
             <!-- companies logo -->
             <div>
@@ -558,7 +625,7 @@
             </div>
             <!-- companies logo -->
         </div>
-        <!-- ###### company logo base ##### -->
+        <!-- %%%%%%%%# company logo base %%%%%%%% -->
     </section>
     <!-- %%%%%%%%%%%%%%%%% /companies logo section code %%%%%%%%%%%%%% -->
     <!-- %%%%%%%%%%%%%%%%% blog section code %%%%%%%%%%%%%%%%%%%%% -->
@@ -626,9 +693,9 @@
     </section>
     <!-- %%%%%%%%%%%%%%%%% /blog section code %%%%%%%%%%%%%%%%%%%%% -->
     <!-- %%%%%%%%%%%%%%%%% footer section code %%%%%%%%%%%%%%%%%%%% -->
-    <footer class="mt-24 bg-pink-200 w-full px-24 py-4 relative">
+    <footer class="mt-24 bg-pink-200 w-full px-24 py-4 relative flex flex-col justify-center items-center">
         <!-- subscribe button code -->
-        <div class="absolute -top-4 sm:left-[30%] md:left-[35%] lg:left-1/2">
+        <div class="absolute -top-4 left-[30%]">
             <input type="email" placeholder="Enter your email"
                 class=" sm:px-7 py-2 md:px-12 md:py-3 rounded-tl-md rounded-bl-md border-[1px] border-buttonColorSecond font-Poppins outline-none ">
             <button
@@ -638,52 +705,49 @@
         </div>
         <!-- /subscribe button code -->
         <!-- content base of footer -->
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 py-20">
+        <div class="flex flex-col flex-wrap py-24 justify-center items-center">
             <div>
                 <a href="#" class="text-3xl font-LogoFont italic">Kashish<span
                         class="text-buttonColorSecond">Cosmetic</span></a>
-                <p class="font-CormorantInfant text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda saepe, quidem odio tenetur fugit totam numquam ad similique quo laboriosam tempore ex
-                    itaque facere sapiente neque ab debitis nemo rem.</p>
             </div>
             <!-- useful links of footer -->
-            <div>
-                <ul class="flex flex-col">
-                    <li class="px-5"><a href="#"
+            <div class="my-5 before:content-[''] w-full h-0 border-2 border-heartColor rounded-sm">
+                <ul class="flex py-2">
+                    <li class="sm:px-2 md:px-3 lg:px-5"><a href="#"
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Home</a>
                     </li>
-                    <li class="px-5"><a href="#"
+                    <li class="sm:px-2 md:px-3 lg:px-5"><a href="#"
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">About</a>
                     </li>
-                    <li class="px-5"><a href="#"
+                    <li class="sm:px-2 md:px-3 lg:px-5"><a href="#"
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Shop</a>
                     </li>
-                    <li class="px-5"><a href="#Service"
+                    <li class="sm:px-2 md:px-3 lg:px-5"><a href="#Service"
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Service</a>
                     </li>
-                    <li class="px-5"><a href="#"
+                    <li class="sm:px-2 md:px-3 lg:px-5"><a href="#"
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">We
                             also
                             provide</a>
                     </li>
-                    <li class="px-5"><a href="#"
+                    <li class="sm:px-2 md:px-3 lg:px-5"><a href="#"
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Blog</a>
                     </li>
                 </ul>
             </div>
             <!-- /useful links of footer -->
             <!-- social media links of footer -->
-            <div>
-                <ul class="flex flex-col">
-                    <li>
+            <div class="my-4">
+                <ul class="flex justify-center items-center">
+                    <li class="px-4">
                         <a href=""
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Facebook</a>
                     </li>
-                    <li>
+                    <li class="px-4">
                         <a href=""
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Instagram</a>
                     </li>
-                    <li>
+                    <li class="px-4">
                         <a href=""
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Twitter</a>
                     </li>
@@ -691,19 +755,19 @@
             </div>
             <!-- /social media links of footer -->
             <!-- term and condition footer -->
-            <div>
-                <ul class="flex flex-col">
-                    <li>
+            <div class=" my-4 ">
+                <ul class="flex justify-center items-center">
+                    <li class="px-4">
                         <a href=""
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Term
                             and condition</a>
                     </li>
-                    <li>
+                    <li class="px-4">
                         <a href=""
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Privacy
                             policy</a>
                     </li>
-                    <li>
+                    <li class="px-4">
                         <a href=""
                             class="cursor-pointer font-CormorantInfant font-medium  text-xl hover:text-heartColor">Something</a>
                     </li>
@@ -712,8 +776,7 @@
             <!-- /term and condition footer -->
         </div>
         <!-- copy right logo -->
-        <hr class="my-4">
-        <div class="my-20">
+        <div class="my-2">
             <h4 class="font-CormorantInfant text-xl">
                 <i class="fa-solid fa-copyright"></i>
                 Copyright 2022 Kashish cosmetic : All right reserved
@@ -723,6 +786,9 @@
         <!-- /content of footer -->
     </footer>
     <!-- %%%%%%%%%%%%%%%%% /footer section code %%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%% swiper js script cdn link %%%%%%%%%%%%%%%% -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- %%%%%%%%%%%%%%%% swiper js script cdn link %%%%%%%%%%%%%%%% -->
 </body>
 
 </html>
